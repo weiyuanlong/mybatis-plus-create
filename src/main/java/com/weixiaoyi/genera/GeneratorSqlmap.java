@@ -1,4 +1,4 @@
-package com;
+package com.weixiaoyi.genera;
 
 
 import org.mybatis.generator.api.MyBatisGenerator;
