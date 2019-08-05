@@ -27,12 +27,10 @@ public class MybatisGenerator implements CommentGenerator {
         currentDateStr = (new SimpleDateFormat("yyyy-MM-dd HH:mm:SS")).format(new Date());
     }
 
-    @Override
     public void addConfigurationProperties(Properties properties) {
 
     }
 
-    @Override
     public void addFieldComment(Field field, IntrospectedTable introspectedTable, IntrospectedColumn introspectedColumn) {
         StringBuilder sb = new StringBuilder();
 
@@ -42,53 +40,43 @@ public class MybatisGenerator implements CommentGenerator {
         field.addJavaDocLine(sb.toString());
     }
 
-    @Override
     public void addFieldComment(Field field, IntrospectedTable introspectedTable) {
 
     }
 
-    @Override
     public void addClassComment(InnerClass innerClass, IntrospectedTable introspectedTable) {
 
     }
 
-    @Override
-    public void addClassComment(InnerClass innerClass, IntrospectedTable introspectedTable, boolean b) {
+    public void addClassComment(InnerClass innerClass, IntrospectedTable introspectedTable, boolean markAsDoNotDelete) {
 
     }
 
-    @Override
     public void addEnumComment(InnerEnum innerEnum, IntrospectedTable introspectedTable) {
 
     }
 
-    @Override
     public void addGetterComment(Method method, IntrospectedTable introspectedTable, IntrospectedColumn introspectedColumn) {
 
     }
 
-    @Override
     public void addSetterComment(Method method, IntrospectedTable introspectedTable, IntrospectedColumn introspectedColumn) {
 
     }
 
-    @Override
     public void addGeneralMethodComment(Method method, IntrospectedTable introspectedTable) {
 
     }
 
-    @Override
     public void addJavaFileComment(CompilationUnit compilationUnit) {
 
     }
 
-    @Override
     public void addComment(XmlElement xmlElement) {
 
     }
 
-    @Override
-    public void addRootComment(XmlElement xmlElement) {
+    public void addRootComment(XmlElement rootElement) {
 
     }
 
